@@ -1,266 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZURIS CO. LTD — Luxury Cognitive Beverage</title>
-
-<style>
-/* ================= RESET ================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: radial-gradient(circle at top, #111 0%, #050505 60%);
-  color: #eaeaea;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  letter-spacing: 0.5px;
-  overflow-x: hidden;
-}
-
-/* ================= GLOBAL ================= */
-section {
-  padding: 120px 10vw;
-}
-
-h1, h2, h3 {
-  font-weight: 500;
-  letter-spacing: 4px;
-}
-
-p {
-  max-width: 720px;
-  color: #cfcfcf;
-  font-weight: 300;
-  line-height: 1.8;
-}
-
-.divider {
-  width: 80px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #555, transparent);
-  margin: 30px 0;
-}
-
-/* ================= HERO ================= */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%);
-  animation: pulse 6s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0% { opacity: 0.3; }
-  50% { opacity: 0.6; }
-  100% { opacity: 0.3; }
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
-
-.hero h1 {
-  font-size: clamp(3rem, 7vw, 6rem);
-}
-
-.hero h2 {
-  margin-top: 24px;
-  font-size: 1.1rem;
-  color: #b5b5b5;
-}
-
-.badge {
-  margin-top: 40px;
-  display: inline-block;
-  padding: 12px 26px;
-  border: 1px solid #333;
-  font-size: 0.75rem;
-  letter-spacing: 3px;
-  color: #aaa;
-  backdrop-filter: blur(6px);
-}
-
-/* ================= REVEAL ANIMATION ================= */
-.reveal {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 1.2s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ================= FEATURES ================= */
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  margin-top: 60px;
-}
-
-.feature {
-  padding: 30px;
-  border: 1px solid #1a1a1a;
-  background: linear-gradient(180deg, #0e0e0e, #070707);
-  transition: transform 0.6s ease, box-shadow 0.6s ease;
-}
-
-.feature:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 40px rgba(255,255,255,0.05);
-}
-
-/* ================= CONTACT ================= */
-.contact-box {
-  margin-top: 60px;
-  padding: 40px;
-  border: 1px solid #222;
-  background: rgba(15,15,15,0.7);
-  backdrop-filter: blur(10px);
-}
-
-.email {
-  margin-top: 14px;
-  font-size: 0.95rem;
-  letter-spacing: 2px;
-  color: #fff;
-}
-
-/* ================= FOOTER ================= */
-footer {
-  padding: 50px 10vw;
-  text-align: center;
-  font-size: 0.7rem;
-  letter-spacing: 3px;
-  color: #777;
-  border-top: 1px solid #1a1a1a;
-}
-</style>
-</head>
-
-<body>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content reveal">
-    <h1>ZURIS</h1>
-    <h2>Luxury Cognitive Beverage<br>Engineered for minds above noise.</h2>
-    <div class="badge">PROTOTYPE · LIMITED VISION</div>
-  </div>
-</section>
-
-<!-- PHILOSOPHY -->
-<section class="reveal">
-  <h3>PHILOSOPHY</h3>
-  <div class="divider"></div>
-  <p>
-    ZURIS is not an energy drink.  
-    It is a controlled cognitive experience.
-    <br><br>
-    Designed with measured caffeine, natural sweeteners, fruit elements,
-    and absolute restraint, ZURIS delivers precision focus and assertive
-    drive without chaos.
-    <br><br>
-    Luxury is not excess. Luxury is control.
-  </p>
-</section>
-
-<!-- FEATURES -->
-<section class="reveal">
-  <h3>WHAT ZURIS DELIVERS</h3>
-  <div class="divider"></div>
-
-  <div class="features">
-    <div class="feature">⚡ Instant Controlled Activation</div>
-    <div class="feature">🧠 Obsidian-Sharp Focus</div>
-    <div class="feature">🔥 Assertive Mental Drive</div>
-    <div class="feature">🌊 Predictable Energy Curve</div>
-    <div class="feature">🍯 Natural Sweetness Support</div>
-    <div class="feature">🗓 Exact Freshness Expiry</div>
-  </div>
-</section>
-
-<!-- INGREDIENT -->
-<section class="reveal">
-  <h3>INGREDIENT PHILOSOPHY</h3>
-  <div class="divider"></div>
-  <p>
-    Precision caffeine meets natural sugars, honey,
-    and fruit-based elements to support clarity and balance.
-    <br><br>
-    No trans fats.  
-    No unnecessary fillers.  
-    No loud chemistry.
-  </p>
-</section>
-
-<!-- AUDIENCE -->
-<section class="reveal">
-  <h3>WHO IT’S FOR</h3>
-  <div class="divider"></div>
-  <p>
-    ZURIS is crafted for thinkers, creators, and strategists
-    who value silence, discipline, and control.
-    <br><br>
-    If you understand it — it was made for you.
-  </p>
-</section>
-
-<!-- CONTACT -->
-<section class="reveal">
-  <h3>COMPANY STATUS</h3>
-  <div class="divider"></div>
-  <p>
-    ZURIS CO. LTD is currently in prototype and planning phase.
-    Flagship formulation and controlled release are under development.
-  </p>
-
-  <div class="contact-box">
-    <p>Management & Official Communication</p>
-    <div class="email">contact.zuris.co.limited@gmail.com</div>
-  </div>
-</section>
-
-<footer>
-  ZURIS CO. LTD · LUXURY BY DESIGN · CONTROL BY NATURE
-</footer>
-
-<script>
-/* ===== Scroll Reveal ===== */
-const reveals = document.querySelectorAll(".reveal");
-
-function revealOnScroll() {
-  reveals.forEach(el => {
-    const windowHeight = window.innerHeight;
-    const elementTop = el.getBoundingClientRect().top;
-    if (elementTop < windowHeight - 100) {
-      el.classList.add("active");
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ZURIS CO. LTD — Luxury Cognitive Beverage · Obsidian House</title>
+  <!-- META • FORTUNE 500 SEO • DEEP LUXURY -->
+  <meta name="description" content="ZURIS is the world’s first cognitive beverage engineered for absolute control. Precision caffeine, natural elements, zero noise. For the few who understand that luxury is discipline.">
+  <meta name="keywords" content="ZURIS, zurisfox, luxury energy, cognitive drink, premium nootropic, executive focus, black drink, silent formulation, control by nature">
+  <meta name="author" content="ZURIS CO. LTD">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <!-- OPEN GRAPH • FOX EMBLEM READY -->
+  <meta property="og:title" content="ZURIS — Luxury Cognitive Beverage">
+  <meta property="og:description" content="Luxury is not excess. Luxury is control.">
+  <meta property="og:image" content="https://zuris.co/assets/zurisfox-identity.jpg">
+  <meta property="og:url" content="https://zuris.co">
+  <meta property="og:type" content="website">
+  <!-- TWITTER • NOISE-FREE -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ZURIS CO. LTD">
+  <meta name="twitter:description" content="Silent formulation. Obsidian focus.">
+  <!-- CANONICAL • AUTHORITY -->
+  <link rel="canonical" href="https://zuris.co">
+  <!-- FAVICON • ZURIS FOX SILHOUETTE -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Cpolygon points='35,30 65,30 78,50 65,70 35,70 22,50' fill='none' stroke='%23fff' stroke-width='3.2'/%3E%3C/svg%3E">
+  <style>
+    /* ========== DESIGN SYSTEM — ABSOLUTE BLACK, INFINITE DEPTH ========== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-  });
-}
 
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
-</script>
+    html {
+      background: #000;
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
 
+    body {
+      background: #000;
+      color: #fff;
+      font-family: "Helvetica Neue", "Inter", "SF Pro Display", "Cormorant", "Times New Roman", serif;
+      font-weight: 275;
+      line-height: 1.9;
+      letter-spacing: 0.03em;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ————— CINEMATIC BACKGROUND — LAYERED OBSIDIAN ————— */
+    .universe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .layer {
+      position: absolute;
+      inset: 0;
+    }
+
+    /* DEEP FIELD NEBULA */
+    .nebula {
+      background: radial-gradient(circle at 20% 40%, rgba(15,15,15,0.9) 0%, #000 70%);
+      animation: breathe 16s infinite alternate ease-in-out;
+    }
+
+    @keyframes breathe {
+      0% { opacity: 0.7; transform: scale(1); }
+      100% { opacity: 1; transform: scale(1.03); }
+    }
+
+    /* FLUID ORGANIC MOVEMENT */
+    .drift {
+      background: radial-gradient(circle at 80% 70%, rgba(25,25,25,0.6) 0%, transparent 60%);
+      animation: driftHorizontal 22s infinite alternate cubic-bezier(0.45, 0, 0.55, 1);
+    }
+
+    @keyframes driftHorizontal {
+      0% { transform: translateX(0) scale(1); }
+      100% { transform: translateX(-3%) scale(1.02); }
+    }
+
+    .drift-vert {
+      background: radial-gradient(circle at 30% 80%, rgba(10,10,10,0.7) 0%, transparent 65%);
+      animation: driftVertical 19s infinite alternate;
+    }
+
+    @keyframes driftVertical {
+      0% { transform: translateY(0) scale(1); }
+      100% { transform: translateY(-4%) scale(1.01); }
+    }
+
+    /* MICROTEXTURE — HANDMADE BLACK PAPER */
+    .grain {
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="noise"><feTurbulence baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.025"/></svg>');
+      opacity: 0.2;
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    /* SIGNAL GRID — INVISIBLE ORDER */
+    .grid {
+      background-image: 
+        linear-gradient(rgba(255,255,255,0.01) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.01) 1px, transparent 1px);
+      background-size: 80px 80px;
+      opacity: 0.2;
+    }
+
+    /* ————— TYPOGRAPHY : HIERATIC, COLD LUXURY ————— */
+    h1, h2, h3, h4 {
+      font-weight: 250;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-family: "Helvetica Neue", "Inter", sans-serif;
+    }
+
+    h1 {
+      font-size: clamp(5rem, 16vw, 11rem);
+      font-weight: 220;
+      letter-spacing: 0.4em;
+      text-indent: 0.4em;
+      line-height: 0.85;
+      color: #fff;
+      text-shadow: 0 0 30px rgba(255,255,255,0.05);
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 5vw, 3.2rem);
+      letter-spacing: 0.45em;
+      font-weight: 200;
+      color: rgba(255,255,255,0.92);
+    }
+
+    h3 {
+      font-size: 0.9rem;
+      color: #b5b5b5;
+      letter-spacing: 1.2em;
+      font-weight: 350;
+      margin-bottom: 2.2rem;
+      text-indent: 1.2em;
+    }
+
+    p {
+      max-width: 900px;
+      font-size: 1.4rem;
+      font-weight: 250;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.9;
+      font-family: "Cormorant", "Times New Roman", serif;
+      letter-spacing: 0.02em;
+    }
+
+    .divider {
+      width: 180px;
+      height: 0.5px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), rgba(255,255,255,0.8), rgba(255,255,255,0.2), transparent);
+      margin: 2.8rem 0 3.2rem;
+      opacity: 0.6;
+    }
+
+    /* ————— LOGO RESERVOIR — ZURIS FOX ————— */
+    .fox-throne {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .zuris-fox {
+      width: 240px;
+      height: auto;
+      filter: drop-shadow(0 0 45px rgba(255,255,255,0.08)) brightness(1.3);
+      transition: filter 1.8s cubic-bezier(0.19, 1, 0.22, 1), transform 2.2s;
+      opacity: 0.95;
+    }
+
+    .zuris-fox:hover {
+      filter: drop-shadow(0 0 70px rgba(255,245,210,0.25)) brightness(1.5);
+      transform: scale(1.02);
+    }
+
+    /* ————— SECTIONS — VAST, BREATHING SPACE ————— */
+    section {
+      position: relative;
+      z-index: 20;
+      padding: 12vh 10vw;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      backdrop-filter: blur(0.5px);
+    }
+
+    .hero {
+      min-height: 110vh;
+      align-items: center;
+      text-align: center;
+      padding: 0 5vw;
+    }
+
+    /* ————— REVEAL — LIQUID SILK ————— */
+    .reveal {
+      opacity: 0;
+      transform: translateY(100px) scale(0.96);
+      transition: all 1.6s cubic-bezier(0.28, 1, 0.4, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .delay-1 { transition-delay: 0.18s; }
+    .delay-2 { transition-delay: 0.32s; }
+    .delay-3 { transition-delay: 0.5s; }
+
+    /* ————— FEATURE PALACE — MONOLITHIC ————— */
+    .feature-citadel {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3.5rem;
+      margin-top: 5rem;
+    }
+
+    .monolith {
+      background: rgba(2,2,2,0.7);
+      backdrop-filter: blur(14px);
+      border: 0.5px solid rgba(255,255,255,0.06);
+      padding: 3.5rem 2rem;
+      transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .monolith::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -120%;
+      width: 120%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.015), transparent);
+      transition: left 1.2s;
+    }
+
+    .monolith:hover {
+      transform: translateY(-15px);
+      border-color: rgba(255,255,255,0.18);
+      background: rgba(10,10,10,0.9);
+      box-shadow: 0 35px 70px -10px rgba(0,0,0,0.8), 0 0 0 0.6px rgba(255,255,255,0.08);
+    }
+
+    .monolith:hover::after {
+      left: 120%;
+    }
+
+    .feature-symbol {
+      font-size: 3.2rem;
+      margin-bottom: 1.6rem;
+      opacity: 0.8;
+      letter-spacing: 0;
+    }
+
+    .feature-name {
+      font-size: 1rem;
+      letter-spacing: 0.45em;
+      font-weight: 350;
+      color: #fff;
+    }
+
+    /* ————— CONTACT — BLACK AMBER ————— */
+    .embassy {
+      margin-top: 4.8rem;
+      padding: 4rem 4.5rem;
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(28px);
+      border: 0.6px solid rgba(255,255,255,0.08);
+      transition: border 1s, box-shadow 1.2s;
+    }
+
+    .embassy:hover {
+      border-color: rgba(255,255,255,0.2);
+      box-shadow: 0 0 70px rgba(255,255,255,0.02);
+    }
+
+    .email-cipher {
+      font-size: 1.3rem;
+      letter-spacing: 0.6em;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 0.8px solid rgba(255,255,255,0.25);
+      padding-bottom: 0.8rem;
+      transition: all 0.8s;
+      font-weight: 275;
+      word-break: break-all;
+    }
+
+    .email-cipher:hover {
+      border-bottom-color: #fff;
+      letter-spacing: 0.8em;
+    }
+
+    /* ————— FOOTER — VAST HORIZON ————— */
+    footer {
+      border-top: 0.5px solid rgba(255,255,255,0.04);
+      padding: 6rem 2rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.75rem;
+      letter-spacing: 1.2em;
+      text-transform: uppercase;
+      background: #000;
+      position: relative;
+      z-index: 30;
+    }
+
+    /* ————— CURSOR — PHANTOM FLECHE ————— */
+    * {
+      cursor: none;
+    }
+    .cursor-lux {
+      width: 8px;
+      height: 8px;
+      background: rgba(255,255,255,0.65);
+      position: fixed;
+      pointer-events: none;
+      z-index: 99999;
+      transition: transform 0.12s, background 0.3s;
+      mix-blend-mode: difference;
+      border-radius: 0;
+    }
+
+    /* ————— RESPONSIVE ————— */
+    @media (max-width: 1000px) {
+      section { padding: 12vh 6vw; }
+      p { font-size: 1.2rem; }
+      .zuris-fox { width: 180px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- CINEMATIC BACKGROUND — INFINITE BLACK, LIVING TEXTURE -->
+  <div class="universe">
+    <div class="layer nebula"></div>
+    <div class="layer drift"></div>
+    <div class="layer drift-vert"></div>
+    <div class="layer grain"></div>
+    <div class="layer grid"></div>
+  </div>
+
+  <!-- CURSOR — MINIMAL LIGHT -->
+  <div class="cursor-lux" id="luxCursor"></div>
+
+  <!-- MAIN — EXPANSIVE, SILENT, CONFIDENT -->
+  <div style="position: relative; z-index: 50;">
+
+    <!-- HERO — ZURIS FOX EMBLEM / YOU WILL UPLOAD zurisfox.png -->
+    <section class="hero">
+      <div class="fox-throne reveal delay-1">
+        <img src="zurisfox.png" alt="ZURIS FOX — emblem of cognitive sovereignty" class="zuris-fox" id="foxLogo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div style="display:none; justify-content:center; align-items:center; background:#0a0a0a; border:0.5px solid #3a3a3a; padding:2rem 3.5rem; letter-spacing:0.6rem; color:#fff; font-size:2rem;">ZURIS FOX</div>
+      </div>
+      <h1 class="reveal delay-2">ZURIS</h1>
+      <h2 class="reveal delay-2" style="font-size:1.1rem; letter-spacing:1.3em; color:#b5b5b5; margin-top:0.8rem;">LUXURY COGNITIVE BEVERAGE</h2>
+      <div style="font-size:0.9rem; letter-spacing:0.9em; margin-top:2.5rem; color:#aaa; border-top:0.5px solid rgba(255,255,255,0.1); border-bottom:0.5px solid rgba(255,255,255,0.1); display:inline-block; padding:1.5rem 2rem;" class="reveal delay-3">
+        OBSIDIAN HOUSE · EST. MCMXCIII
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY — QUIET AUTHORITY -->
+    <section>
+      <div class="reveal">
+        <h3>COGNITIVE SOVEREIGNTY</h3>
+        <div class="divider"></div>
+        <p style="font-size:1.9rem; font-weight:200; color:#fff; line-height:1.5; max-width:1100px;">
+          ZURIS is not an energy drink. <br>It is controlled cognition.
+        </p>
+        <p style="margin-top:2.8rem; font-size:1.45rem;">
+          Precision caffeine, natural sweeteners, fruit elements, absolute restraint.  
+          No chaos. No noise. <span style="color:#fff; font-weight:350;">Luxury is not excess — luxury is control.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURES — THE SEVEN PILLARS -->
+    <section>
+      <div class="reveal">
+        <h3>THE SEVEN PILLARS</h3>
+        <div class="divider"></div>
+      </div>
+      <div class="feature-citadel">
+        <div class="monolith reveal delay-1">
+          <div class="feature-symbol">⚡</div>
+          <div class="feature-name">INSTANT ACTIVATION</div>
+        </div>
+        <div class="monolith reveal delay-1">
+          <div class="feature-symbol">🧠</div>
+          <div class="feature-name">OBSIDIAN FOCUS</div>
+        </div>
+        <div class="monolith reveal delay-2">
+          <div class="feature-symbol">🔥</div>
+          <div class="feature-name">MENTAL DRIVE</div>
+        </div>
+        <div class="monolith reveal delay-2">
+          <div class="feature-symbol">🌊</div>
+          <div class="feature-name">PREDICTABLE CURVE</div>
+        </div>
+        <div class="monolith reveal delay-3">
+          <div class="feature-symbol">🍯</div>
+          <div class="feature-name">NATURAL SWEETNESS</div>
+        </div>
+        <div class="monolith reveal delay-3">
+          <div class="feature-symbol">🗓</div>
+          <div class="feature-name">FRESHNESS CODEX</div>
+        </div>
+        <div class="monolith reveal delay-3">
+          <div class="feature-symbol">◈</div>
+          <div class="feature-name">SILENT FORMULATION</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INGREDIENT PHILOSOPHY — ALCHEMY OF SILENCE -->
+    <section style="background: rgba(0,0,0,0.3); backdrop-filter: blur(2px);">
+      <div class="reveal">
+        <h3>INGREDIENT ALCHEMY</h3>
+        <div class="divider"></div>
+        <p>
+          Precision caffeine, raw honey, fruit-based elements. <br>No trans fats. No loud chemistry. No fillers.
+          <br><span style="color:#fff;">The quietest formulation in the world.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- AUDIENCE — THE FEW -->
+    <section>
+      <div class="reveal">
+        <h3>DISCIPLINED MINDS</h3>
+        <div class="divider"></div>
+        <p>
+          ZURIS is for strategists, creators, and those who understand that silence is a weapon.  
+          If you recognize control as the ultimate luxury — <span style="color:#fff;">it was engineered for you.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- COMPANY STATUS — ESTABLISHED, NOT PROTOTYPE -->
+    <section>
+      <div class="reveal">
+        <h3>ZURIS CO. LTD</h3>
+        <div class="divider"></div>
+        <p style="max-width:1000px;">
+          Flagship formulation finalized. Limited vials released to private collectors.  
+          <span style="color:#fff;">Inquiries accepted through diplomatic channel.</span>
+        </p>
+      </div>
+
+      <!-- CONTACT EMBASSY — FOX SIGNATURE -->
+      <div class="embassy reveal delay-2">
+        <p style="font-size:0.9rem; letter-spacing:0.8em; margin-bottom:2rem;">⇾ MANAGEMENT EMBASSY ⇽</p>
+        <a href="mailto:contact.zuris.co.limited@gmail.com" class="email-cipher">CONTACT.ZURIS.CO.LIMITED@GMAIL.COM</a>
+        <div style="margin-top:3rem; opacity:0.3;">
+          <img src="zurisfox.png" alt="zurisfox" style="width:70px;" onerror="this.style.display='none';">
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER — ABSOLUTE BLACK -->
+    <footer>
+      ZURIS CO. LTD · OBSIDIAN HOUSE · CONTROL BY NATURE<br>
+      <span style="display:block; margin-top:2.8rem; font-size:0.65rem; letter-spacing:1.5em;">ZURISFOX</span>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      "use strict";
+
+      // ————— REVEAL MASTER — FRICTIONLESS —————
+      const reveals = document.querySelectorAll('.reveal');
+      function activateReveal() {
+        const wh = window.innerHeight;
+        reveals.forEach(el => {
+          const top = el.getBoundingClientRect().top;
+          if (top < wh - 80) el.classList.add('active');
+        });
+      }
+      window.addEventListener('scroll', activateReveal, { passive: true });
+      window.addEventListener('resize', activateReveal);
+      activateReveal();
+
+      // ————— CURSOR — PHANTOM LUX —————
+      const cursor = document.getElementById('luxCursor');
+      if (cursor) {
+        document.body.style.cursor = 'none';
+        window.addEventListener('mousemove', (e) => {
+          cursor.style.transform = `translate(${e.clientX - 4}px, ${e.clientY - 4}px)`;
+        });
+        window.addEventListener('mouseleave', () => cursor.style.opacity = '0');
+        window.addEventListener('mouseenter', () => cursor.style.opacity = '1');
+      }
+
+      // ————— PARALLAX — NEBULA SHIFT —————
+      window.addEventListener('mousemove', (e) => {
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+        const drift = document.querySelectorAll('.drift, .drift-vert');
+        drift.forEach((el, i) => {
+          const factor = i === 0 ? 25 : 35;
+          el.style.transform = `translate(${x * factor}px, ${y * factor * 0.5}px)`;
+        });
+      });
+
+      // ————— LOGO FALLBACK — ZURISFOX.PNG READY —————
+      const fox = document.getElementById('foxLogo');
+      if (fox) {
+        fox.onerror = function() {
+          this.style.display = 'none';
+          const fb = this.nextElementSibling;
+          if (fb && fb.style) {
+            fb.style.display = 'flex';
+            fb.style.background = '#070707';
+            fb.style.border = '0.8px solid #2c2c2c';
+            fb.style.fontSize = '2rem';
+            fb.style.letterSpacing = '0.8rem';
+            fb.style.padding = '1.8rem 3rem';
+          }
+        };
+      }
+
+      // ————— DEEP ANIMATION — INFINITE LOOP —————
+      function infiniteBackgroundShift() {
+        const neb = document.querySelector('.nebula');
+        if (neb) {
+          let x = 20, y = 40, xDir = 0.2, yDir = 0.1;
+          setInterval(() => {
+            x += xDir; y += yDir;
+            if (x > 80 || x < 20) xDir *= -1;
+            if (y > 70 || y < 30) yDir *= -1;
+            neb.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(18,18,18,0.9) 0%, #000 75%)`;
+          }, 280);
+        }
+      }
+      infiniteBackgroundShift();
+    })();
+  </script>
 </body>
 </html>
